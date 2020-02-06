@@ -1,0 +1,18 @@
+    public static void main(String []args){
+        int prev = 0;
+        int current = 1;
+        int tmp;
+        int sum = 0;
+        while(current < 4000000)
+        {
+            if(current % 2 == 0)
+            {
+                sum += current;
+            }
+            tmp = prev;
+            prev = current;
+            current += tmp;
+            System.out.println(current);  
+        }
+        System.out.println(sum);  
+}
